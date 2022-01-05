@@ -1,8 +1,14 @@
 package homework;
 
+import java.util.Scanner;
+
 public class task_2 {
     public static void main(String[] args) {
-        int m = 3456789; //minutes
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, enter the number of minutes and press Enter");
+        int m = scanner.nextInt();
+
+        //int m = 3456789; //minutes
         int h = m / 60; //hours
         int d = h / 24; //days
         int mth = d / 30; //mouth
